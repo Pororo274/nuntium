@@ -5,11 +5,11 @@ import PostItem from "../../post/post-item";
 
 export default function Posts() {
   return (
-    <section className="mt-24">
+    <section className="mt-24 pb-20">
       <Container className="grid grid-cols-12">
         <div className="flex justify-between gap-28 col-start-2 col-span-10">
-          <main className="flex flex-col">
-            {posts.map((post) => (
+          <main className="flex flex-col gap-16">
+            {posts.slice(4, 8).map((post) => (
               <PostItem post={post} key={post.id} />
             ))}
           </main>
