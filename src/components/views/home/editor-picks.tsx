@@ -8,11 +8,11 @@ export default function EditorPicks() {
         <h2 className="text-4xl font-bold text-center">Editor’s Picks</h2>
         <div className="w-48 h-1 bg-black-900 mx-auto mt-4"></div>
         <div className="grid grid-cols-12 mt-12">
-          {posts.map((x) => (
-            <div className="col-span-8 col-start-3">
+          <div className="col-span-8 col-start-3 flex flex-col gap-12">
+            {posts.slice(2, 5).map((x) => (
               <PostItemBig post={x} key={x.id} />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
