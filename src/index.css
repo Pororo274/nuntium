@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("./assets/fonts/LibreBaskerville-Bold.ttf");
+  font-weight: 700;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
